@@ -90,11 +90,13 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
   donde se impartirá el taller.
 
 * Carpetas de OneDrive: se requiere permiso al menos de lectura a la carpeta
-  [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder]<span id="a1"><sup>[1](#f1)</sup></span>.
+  [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder].
+  <span id="a1"><sup>[[1]](#f1)</sup></span>
   
 * Para los miembros del equipo de Edad con Salud, también será necesario
   permiso **de escritura** en la carpeta de
-  [`Documentación` de _Edad con Salud_][doc_folder]<span id="a1">^[1](#f1)^</span>.
+  [`Documentación` de _Edad con Salud_][doc_folder].
+  <span id="a1"><sup>[[1]](#f1)</sup></span>
   Quienes no estén en el equipo de _Edad con Salud_ podrán seguir el taller
   sin problema, sin necesidad de tener persmisos para esta carpeta.
   
