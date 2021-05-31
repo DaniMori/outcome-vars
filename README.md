@@ -156,4 +156,4 @@ para asistir a este taller y cumplir con los objetivos satisfactoriamente.
 alguna de estas carpetas, contactar con
 [Daniel Morillo](mailto:daniel.morillo@cibersam.es) o
 [Elvira Lara](mailto:elvira.lara@uam.es).
-[<img src="https://render.githubusercontent.com/render/math?math=\hookleftarrow">](#a1)
+[\u21A9](#a1)
