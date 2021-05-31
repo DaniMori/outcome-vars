@@ -90,22 +90,17 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
   donde se impartirá el taller.
 
 * Carpetas de OneDrive: se requiere permiso al menos de lectura a la carpeta
-  [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder][^folders].
+  [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder]<span id="a1">^1^(#f1)</span>.
   
 * Para los miembros del equipo de Edad con Salud, también será necesario
   permiso **de escritura** en la carpeta de
-  [`Documentación` de _Edad con Salud_][doc_folder][^folders].
+  [`Documentación` de _Edad con Salud_][doc_folder]<span id="a1">^1^(#f1)</span>.
   Quienes no estén en el equipo de _Edad con Salud_ podrán seguir el taller
   sin problema, sin necesidad de tener persmisos para esta carpeta.
   
 [dbb_folder]: https://dauam-my.sharepoint.com/:f:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Bases%20de%20datos%20maestras%20Edad%20con%20Salud
   
 [doc_folder]: https://dauam-my.sharepoint.com/:f:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Documentacion%20Edad%20con%20Salud
-
-[^folders]: En caso de no disponer de los permisos necesarios en
-alguna de estas carpetas, contactar con
-[Daniel Morillo](mailto:daniel.morillo@cibersam.es) o
-[Elvira Lara](mailto:elvira.lara@uam.es).
 
 * **[Opcional]** [Bibliografía de grupo de Zotero][zotero_bib].
   Una vez creada la cuenta de usuario en [Zotero.org](https://www.zotero.org/),
@@ -151,3 +146,9 @@ alguna de estas carpetas, contactar con
 Puedes utilizar la siguiente [lista de comprobación](www/checklist.md)
 para verificar que cumples todos los requisitos necesarios
 para asistir a este taller y cumplir con los objetivos satisfactoriamente.
+
+1. <span id="f1"></span> En caso de no disponer de los permisos necesarios en
+alguna de estas carpetas, contactar con
+[Daniel Morillo](mailto:daniel.morillo@cibersam.es) o
+[Elvira Lara](mailto:elvira.lara@uam.es).
+[$\hookleftarrow$](#a1)
