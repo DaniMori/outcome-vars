@@ -96,7 +96,7 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 * Para los miembros del equipo de Edad con Salud, también será necesario
   permiso **de escritura** en la carpeta de
   [`Documentación` de _Edad con Salud_][doc_folder].
-  <span id="a1"><sup>[[1]](#f1)</sup></span>
+  <sup>[[1]](#f1)</sup>
   Quienes no estén en el equipo de _Edad con Salud_ podrán seguir el taller
   sin problema, sin necesidad de tener persmisos para esta carpeta.
   
