@@ -90,11 +90,11 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
   donde se impartirá el taller.
 
 * Carpetas de OneDrive: se requiere permiso al menos de lectura a la carpeta
-  [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder]<span id="a1">^1^(#f1)</span>.
+  [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder]<span id="a1"><sup>[1](#f1)</sup></span>.
   
 * Para los miembros del equipo de Edad con Salud, también será necesario
   permiso **de escritura** en la carpeta de
-  [`Documentación` de _Edad con Salud_][doc_folder]<span id="a1">[1](#f1)</span>.
+  [`Documentación` de _Edad con Salud_][doc_folder]<span id="a1">^[1](#f1)^</span>.
   Quienes no estén en el equipo de _Edad con Salud_ podrán seguir el taller
   sin problema, sin necesidad de tener persmisos para esta carpeta.
   
@@ -112,7 +112,7 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
   
 [zotero_bib]: https://www.zotero.org/groups/4213316/edad_con_salud/
 
-**Otros:**
+### Otros
 
 * Sincronización local de la(s) carpeta(s) de _Edad con Salud_:
   En caso de no tener la carpeta o carpetas sincronizadas localmente,
@@ -146,6 +146,9 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 Puedes utilizar la siguiente [lista de comprobación](www/checklist.md)
 para verificar que cumples todos los requisitos necesarios
 para asistir a este taller y cumplir con los objetivos satisfactoriamente.
+
+
+## Notas:
 
 1. <span id="f1"></span> En caso de no disponer de los permisos necesarios en
 alguna de estas carpetas, contactar con
