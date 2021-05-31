@@ -81,8 +81,8 @@ Es necesario disponer de cuenta en los siguientes servicios:
 Se requiere disponer de permisos y licencias para los siguientes recursos:
 
 * Licencia de Stata: En caso de no disponer de licencia, por favor contactar con
-  [María Cabello](mailto:maria.cabello@uam.es){.email} (miembros del CCOMS), o
-  [<!-- TODO: Contacto -->](<!-- TODO: Email -->@pssjd.org){.email}
+  [María Cabello](mailto:maria.cabello@uam.es) (miembros del CCOMS), o
+  [<!-- TODO: Contacto -->](<!-- TODO: Email -->@pssjd.org)
   (miembros del PSSJD).
   
 * [Canal de Microsoft Teams](<!-- TODO: Completar grupo y canal y enlazar -->):
@@ -104,13 +104,13 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 
 [^folders]: En caso de no disponer de los permisos necesarios en
 alguna de estas carpetas, contactar con
-[Daniel Morillo](mailto:daniel.morillo@cibersam.es){.email} o
-[Elvira Lara](mailto:elvira.lara@uam.es){.email}.
+[Daniel Morillo](mailto:daniel.morillo@cibersam.es) o
+[Elvira Lara](mailto:elvira.lara@uam.es).
 
 * **[Opcional]** [Bibliografía de grupo de Zotero][zotero_bib].
   Una vez creada la cuenta de usuario en [Zotero.org](https://www.zotero.org/),
   se debe contactar con
-  [Daniel Morillo](mailto:daniel.morillo@cibersam.es){.email}
+  [Daniel Morillo](mailto:daniel.morillo@cibersam.es)
   para informar del email usado para crear la cuenta.
   Después de hacerlo, entre las bibliotecas de grupo en Zotero aparecerá la
   biblioteca _Edad con Salud_.
@@ -142,7 +142,7 @@ alguna de estas carpetas, contactar con
   utilizada para generar el dataset con la(s) variable(s) outcome
   correspondiente(s), esté creada en Stata.)
   Si no eres miembro del equipo de _Edad con Salud_,
-  contacta con [Daniel Morillo](mailto:daniel.morillo@cibersam.es){.email}
+  contacta con [Daniel Morillo](mailto:daniel.morillo@cibersam.es)
   para solicitar un documento "Description" de ejemplo.
   Ten este documento a mano cuando se imparta el taller.
 
