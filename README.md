@@ -12,6 +12,9 @@ satisfactoria, es necesario cumplir los siguientes requisitos:
 
 ### Conocimientos
 
+* Conocimientos de [Stata](https://www.stata.com/support/).
+  No es materia de este taller, así que se asume cierto conocimiento previo.
+
 * Conocer la
   [sintaxis de Markdown](https://daringfireball.net/projects/markdown/)
 
@@ -22,17 +25,15 @@ Para adquirir estos conocimientos, es suficiente con cumplir lo siguiente:
 
 * Haber asistido al
   [seminario sobre Markdown](https://github.com/DaniMori/seminario_markdown)
-  realizado para el CCOMS
-  ([25-06-2020](https://github.com/DaniMori/seminario_markdown/releases/tag/v1.0))
-  o para el equipo de Edad con Salud
-  ([29-04-2021](https://github.com/DaniMori/seminario_markdown/releases/tag/v2.0))
+  realizado para el CCOMS (
+  [25-06-2020](https://github.com/DaniMori/seminario_markdown/releases/tag/v1.0)
+  ) o para el equipo de Edad con Salud (
+  [29-04-2021](https://github.com/DaniMori/seminario_markdown/releases/tag/v2.0)
+  )
 
 * Haber cumplido el [Reto 1](https://www.markdowntutorial.com/)
   (Tutorial Markdown, se tarda unos 15 minutos en completar)
   
-* Conocimientos de [sintaxis de Stata](https://www.stata.com/support/).
-  No es materia de este taller, así que se asume cierto conocimiento previo.
-
 
 ### Software
 
@@ -40,8 +41,13 @@ Es necesario disponer, en el ordenador que se vaya a utilizar para el taller,
 de los siguientes programas instalados:
 
 * [R](https://cran.r-project.org/bin/windows/base/).
+  Es muy recomendable instalar la última versión (4.1.0).
+  <span id="a1"><sup>[[1]](#f1)</sup></span>
 
-* [Rstudio](https://www.rstudio.com/products/rstudio/download/#download).
+* Última versión de
+  [Rstudio](https://www.rstudio.com/products/rstudio/download/#download).
+  La versión actual es la 1.4.1717.
+  <span id="a1"><sup>[[1]](#f1)</sup></span>
 
 * [Stata](https://www.stata.com/).
 
@@ -54,6 +60,10 @@ de los siguientes programas instalados:
   unirse al canal del taller y asistir al mismo
   (Opcionalmente, puede utilizarse desde un navegador web,
   siempre y cuando el micrófono funcione correctamente).
+  
+* [Microsoft Word](https://www.microsoft.com/es-es/microsoft-365/word):
+  En caso de no disponer de una licencia de Office de escritorio, se puede
+  utilizar la [versión online](https://www.office.com/launch/word).
 
 * **[Opcional]** [Zotero](https://www.zotero.org/download/):
   Aunque no es estrictamente necesario,
@@ -82,7 +92,7 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 
 * Licencia de Stata: En caso de no disponer de licencia, por favor contactar con
   [María Cabello](mailto:maria.cabello@uam.es) (miembros del CCOMS), o
-  [<!-- TODO: Contacto -->](<!-- TODO: Email -->@pssjd.org)
+  [el servicio de CAU](mailto:parcsanitari.cau@sjd.es), tel: 936353900
   (miembros del PSSJD).
   
 * [Canal de Microsoft Teams](<!-- TODO: Completar grupo y canal y enlazar -->):
@@ -91,7 +101,7 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 
 * Carpetas de OneDrive: se requiere permiso al menos de lectura a la carpeta
   [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder].
-  <span id="a1"><sup>[[1]](#f1)</sup></span>
+  <span id="a2"><sup>[[2]](#f2)</sup></span>
   
 * Para los miembros del equipo de Edad con Salud, también será necesario
   permiso **de escritura** en la carpeta de
@@ -152,8 +162,14 @@ para asistir a este taller y cumplir con los objetivos satisfactoriamente.
 
 ## Notas:
 
-1. <span id="f1"></span> En caso de no disponer de los permisos necesarios en
+1. Si necesitas ayuda o tienes problemas para instalar R y/o Rstudio,
+puedes consultar
+[este tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-r-and-rstudio)
+de Andy Field. (Agradecimientos a Elvira por la aportación.)
+[↩](#a1)
+
+1. <span id="f2"></span> En caso de no disponer de los permisos necesarios en
 alguna de estas carpetas, contactar con
 [Daniel Morillo](mailto:daniel.morillo@cibersam.es) o
 [Elvira Lara](mailto:elvira.lara@uam.es).
-[↩](#a1)
+[↩](#a2)
