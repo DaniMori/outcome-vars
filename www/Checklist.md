@@ -86,7 +86,7 @@
   y tengo la [Bibliografía de grupo de Zotero][zotero_bib]
   sincronizada localmente.
 
-- [ ] Tengo a mano un documento "Description" de variable(s) outcome de
+- [ ] Tengo a mano un documento prototipo de variable(s) outcome de
   _Edad con Salud_, con sintaxis de Stata.
   <span id="a5"><sup>[[5]](#f5)</sup></span>
 

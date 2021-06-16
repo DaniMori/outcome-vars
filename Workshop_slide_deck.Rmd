@@ -6,8 +6,8 @@ date:      "`r format(lubridate::today(), '%d de %B de %Y')`"
 output:
   revealjs::revealjs_presentation:
     mathjax:         null
-    transition:      slide
-    transitionSpeed: slow
+    transition:      none
+    transitionSpeed: fast
     theme:           beige
     highlight:       espresso
     smart:           yes
@@ -145,9 +145,7 @@ include_graphics(LOGO_RMARKDOWN)
 
 <br>
 
-::: {.fragment}
 Datos brutos -\> Variables "outcome"
-:::
 
 ::: {.fragment .leftalign}
 Dataset:
@@ -167,11 +165,9 @@ Dataset:
 
 Datos brutos -\> Variables "outcome"
 
-::: {.fragment .leftalign}
 Documento "Description":
 
 > -   Copiar sintaxis a documento "Description"
-:::
 
 -   Escribir documento "Description"
 
@@ -189,20 +185,20 @@ Mucho trabajo manual
 
 **Problemas**
 
-::: {.leftalign}
+::: {.fragment .leftalign}
 Integridad de datos:
-:::
 
 <br>
 
--   Actualización
+>-  Actualización
+:::
 
 <br>
 
 -   Control de conflictos
 
 ::: {.notes}
--   Actualización: De los datos si cambia la sintaxis
+-   Actualización: Si cambian los datos de origen
 
 -   Para evitar que haya versiones distintas de misma variable
 :::
@@ -213,13 +209,13 @@ Integridad de datos:
 
 **Problemas**
 
-::: {.leftalign}
+::: {.fragment .leftalign}
 Documentación:
-:::
 
 <br>
 
--   Control de versiones
+>-  Control de versiones
+:::
 
 <br>
 
@@ -303,33 +299,15 @@ aumenta la probabilidad de cometer errores.
 
 <br>
 
--   Teclas en pantalla
+::: {.leftalign}
+Explicación
+
+>-  (Teclas en pantalla)
+:::
 
 <br>
 
 `r exercise_item("Ejercicio:", fragment = TRUE)`
-
-# Cómo lo vamos a hacer...
-
-<br>
-
-::: {.fragment .leftalign}
-Reacciones:
-
--   😐: Neutral (Reset)
-
--   👍: conseguido, todo listo, te sigo, vas muy lento...
-
--   😖: me he perdido, tengo errores, más despacio...
-:::
-
-<br>
-
-::: {.fragment .leftalign}
-✋ ¡Ayuda!
-:::
-
-<!-- "Breakup" rooms; TODO: Comprobar si se puede-->
 
 ::: {.notes}
 Explicaciones (pocas) con teclas en pantalla
@@ -349,8 +327,34 @@ por eso muestro las teclas)
 - Avisar que puede fallar y dejarse de ver las teclas
 
 Hay muchos ejercicios aplicados
+:::
 
-Reacciones: Explicar uso de Polly
+# Cómo lo vamos a hacer...
+
+<br>
+
+::: {.leftalign}
+Reacciones:
+:::
+
+-   😐: Neutral (Reset)
+
+-   👍: conseguido, todo listo, te sigo, vas muy lento...
+
+-   😖: me he perdido, tengo errores, más despacio...
+
+<br>
+
+::: {.fragment .leftalign}
+✋ ¡Ayuda!
+:::
+
+<!-- "Breakup" rooms; TODO: Comprobar si se puede-->
+
+::: {.notes}
+Reacciones: Activar encuesta Polly en el chat de la reunión
+
+Explicar uso de Polly
 
 -   Probar reacciones: empezar por neutra
 
@@ -393,7 +397,10 @@ IMPORTANTE:
 
 1.  Licencia de Stata funcional (probar a arrancar Stata)
 
-2.  Comprobar la sincronización de las carpetas de OneDrive localmente
+2.  Comprobar la sincronización de las carpetas de OneDrive localmente (ruta puede ser distinta)
+
+3.  Zotero: Pedir "OK", "No",
+quien tenga Zotero y biblioteca instalados.
 :::
 
 # Preparación
@@ -425,23 +432,34 @@ Si tenemos una pantalla grande podemos usar la tecla Windows
 y las teclas de cursor para ordenar las ventanas en la pantalla.
 :::
 
-# Consola de R
+# Entorno de Rstudio
+
+<br>
+-   Editor
+
+::: {.fragment}
+>-  Intérprete de R:
 
 <!-- TODO: Imagen consola? -->
 
-<br>
+(Comandos + Resultados)
+:::
 
-Intérprete de R
+::: {.notes}
+Mostrar ventana de Rstudio
 
-<br>
+- Editor: Ahora mismo está vacío
 
--   Comandos + Resultados
+- Consola: Comandos + resultados como la de Stata
+:::
 
 # Configuración
 
 <br>
 
+::: {.leftalign}
 Paquete `ecs.data`
+:::
 
 ::: {.fragment}
 `r exercise_item("Instalar paquete *ecs.data*:")`
@@ -485,13 +503,15 @@ Documentación (configurar sólo los de "Edad con Salud")
 
 `r exercise_item("File -> New Project... -> New Directory:")`
 
-    -   Gestión de datos de "Edad con Salud"
+>-  Gestión de datos de "Edad con Salud"
 
-    -   Escribir "Directory name"
+>-  Escribir "Directory name"
 
-    -  ¿Ejecutar configuración?
+>-  ¿Ejecutar configuración?
 
 ::: {.notes}
+Crear en home de usuario (o explicar en "OneDrive")
+
 "Ejecutar configuración" acabamos de hacerlo al instalar el paquete.
 
 Sólo hace falta hacerlo una vez, así que lo dejamos en "Off" (por defecto)
@@ -510,7 +530,7 @@ Estructura de carpetas:
 ::: {.fragment}
 `r exercise_item('Ver en explorador del SO:')`
 
-- "More" -\> "Show Folder in New Window"
+>- "More" -\> "Show Folder in New Window"
 :::
 
 ::: {.notes}
@@ -586,28 +606,12 @@ Plantilla `.Rmd`:
 
 `r exercise_item("Crear documento desde plantilla .Rmd")`
 
-# Crear documento
-
-<br>
-
-Plantilla `.Rmd`:
-
-:::{.fragment}
-`r exercise_item("Guardar:")`
-
-> -   `CTRL` (`CMD`) + `S`
-
--   Carpeta: `doc/outcomes/cohorte_2019/ola_1/muestra_completa`
-
--   Nombre de archivo
-:::
-
 ::: {.notes}
 -   Ejercicio: Seguir instrucciones en README.md
 
 -   Nombre archivo: ver punto 2 en "Consideraciones generales" (en la plantilla)
 
--   Si usas ejemplo "tipo", añade tu nombre como "particularidad"
+-   Si usas ejemplo "tipo" (cognition), añade iniciales como "particularidad"
 
 Estamos creando un documento a partir de una plantilla diseñada especialmente
 para la generación de las variables "outcome" de Edad con Salud.
@@ -617,17 +621,31 @@ y de forma automática,
 el dataset con la/s variables outcome Y la documentación.
 :::
 
+# Crear documento
+
+<br>
+
+Plantilla `.Rmd`:
+
+`r exercise_item("Guardar:")`
+
+>-  `CTRL` (`CMD`) + `S`
+
+>-  Carpeta: `doc/outcomes/cohorte_2019/ola_1/muestra_completa`
+
+>-  Nombre de archivo
+
 # Generar "output"
 
 <br>
 <br>
 
 <!-- TODO: Imagen Botón -->
--   Botón knit (`CTRL` / `CMD` + `SHIFT` + `K`)
+>-  Botón knit (`CTRL` / `CMD` + `SHIFT` + `K`)
 
 <br>
 
--   Output en Word
+>-  Output en Word
 
 ::: {.notes}
 Al generar el documento en Word se utilizan los estilos de una plantilla
@@ -638,16 +656,16 @@ de Word
 
 <br>
 
--   Tipos de código
+>-  Tipos de código
 
-    -   yaml (encabezado)
-    -   **markdown** / html
-    -   R
-    -   **Stata**
+    >-  yaml (encabezado)
+    >-  **markdown** / html
+    >-  R
+    >-  **Stata**
 
 <br>
 
--   "Placeholders" (`<` ... `>`)
+>-  "Placeholders" (`<` ... `>`)
 
 ::: {.notes}
 yaml: Encabezado; indica "cómo hay que procesar el archivo"
@@ -676,16 +694,18 @@ Resaltado: No contempla Stata, ya que Rstudio no está diseñado para Stata.
 
 <br>
 
--   yaml / R: `#` (Ignora lo que está a la derecha)
+>-  yaml / R: `#` (Ignora lo que está a la derecha)
 
--   Markdown (html): `<!--` ... `-->` ("infijo")
+<br>
+
+>-  Markdown (html): `<!--` ... `-->` ("infijo")
 
 # Comentarios
 
 <br>
 <br>
 
--   "TODO"s == Tareas a realizar
+>-  "TODO"s == Tareas a realizar
 
 <br>
 
@@ -693,14 +713,18 @@ Resaltado: No contempla Stata, ya que Rstudio no está diseñado para Stata.
 
 ::: {.notes}
 Comparar "TODO"'s en comentarios en yaml (línea 2) y markdown (línea 22)
- 
+
+La plantilla nos va a guiar sobre qué hacer mediante los
+"TODO"s; a modo de ejemplo de cómo proceder,
+editamos el título y borramos el "TODO".
+Borrando "TODO's" vamos dejando "limpio" el documento,
+y sabemos que los "TODO's" que queden son cosas pendientes de hacer o resolver.
+
 Ejercicio:
 
 -   Editar título
 
 -   Una vez editado el título, borrar el "TODO".
-Borrando "TODO's" vamos dejando "limpio" el documento,
-y sabemos que los "TODO's" que queden son cosas pendientes de hacer o resolver.
 :::
 
 `r section_title_slide("Edición del documento .Rmd") `
@@ -713,13 +737,11 @@ En este momento, abrir documento "prototipo" si no se ha abierto ya
 
 # Editor visual
 
-<!-- TODO: botón? -->
-
-:::{.fragment}
 ```{r, out.width='25%', out.height='20%'}
 include_graphics(ICON_CONSTRUCTION)
 ```
-:::
+
+<!-- TODO: botón? -->
 
 -   Activar (`CTRL` + `SHIFT` + `F4`)
 
@@ -728,54 +750,90 @@ include_graphics(ICON_CONSTRUCTION)
 
 -   Más info: `r URL_VISUAL_MD`
 
+::: {.notes}
+Editor visual está en "Experimental" pero es mejor usarlo
+para facilitar la edición.
+
+Se puede ver que lo que hace es "formatear" en la pantalla
+el contenido (pero sin que deje de ser sólo texto).
+Lo que hace es "interpretarlo" para que lo veamos más
+parecido a como queremos que se genere en la salida
+(p.ej. en negrita en lugar de entre asteriscos)
+
+Podemos activarlo y desactivarlo cuando queramos para ver
+el aspecto del documento "original".
+:::
+
 # Encabezado
 
 <br>
 
--   Título
+>-  Título
 
--   Output (plantilla)
+>-  Output (plantilla)
 
--   Bibliografía / estilos bibliográficos
+>-  Bibliografía / estilos bibliográficos
 
--   Referencias "no citadas"
+>-  Referencias "no citadas"
 
 <br>
 
 `r exercise_item("Leer y borrar 'consideraciones generales'", fragment = TRUE)`
 
 ::: {.notes}
+Ahora vamos a ver todas las partes de las que consta
+la plantilla.
+
 -   Hay una línea `bibliography` adicional comentada.
 Luego volveremos sobre ello.
 
 También veremos el campo "no cite" más adelante.
 
+NOTA: Dar crédito a Elvira por redacción del documento
+de VV outcome.
+
 Leer texto "Consideraciones generales". Una vez leído y hecho, borrar.
+
+NOTA: Adaptar variable: Tenemos que asegurarnos de que los
+nombres de las variables están corregidos para esta ola
+y/o cohorte, además de asegurarnos de que la sintaxis
+funciona.
 :::
 
 # Chunk de configuración
 
 <br>
 
-- Delimitador de código: \`\`\`
+> - Delimitador de código: \`\`\`
 
 <br>
 
-- Tipo de código: `{r ...}`
+> - Tipo de código: `{r ...}`
 
 <br>
 
-- Nombre: `setup`
+> - Nombre: `setup`
 
 <br>
 
-- Configuración de "chunk"
+> - Configuración de "chunk"
+
+::: {.notes}
+Único código en R:
+
+- Delmitador de código, tres acentos inversos
+
+- A continuación las llaves (código a ejecutar)
+
+- *configuración del chunk*
+(primero quién debe interpretarlo (R); luego, "no incluir" el resultado).
+:::
 
 # Chunk de configuración
 
 <br>
 
-- Librerías
+> - Librerías
 
 <br>
 
@@ -786,13 +844,6 @@ Leer texto "Consideraciones generales". Una vez leído y hecho, borrar.
 :::
 
 ::: {.notes}
-Único código en R:
-
-- Delmitador de código, tres acentos inversos
-
-- A continuación las llaves con la *configuración del chunk*
-(primero quién debe interpretarlo (R); luego, "no incluir" el resultado).
-
 - Configuración necesaria para ejecutar Stata (usar librería Statamarkdown)
 
 Ejecutar para ver resultado: ponerse en la línea y pulsar `ALT` + `ENTER`
@@ -807,8 +858,6 @@ Al ejecutar la línea o antes al configurar el paquete
 :::
 
 ## Si no encuentra Stata...
-
-# Chunk de configuración
 
 <br>
 
@@ -852,11 +901,11 @@ Configuración de `knitr`:
 
 > - `echo = FALSE`: NO incluir sintaxis
 
--   `results = 'hide'`: NO mostrar resultados
+> -   `results = 'hide'`: NO mostrar resultados
 
--   `cleanlog = TRUE`: NO repetir sintaxis en resultados de Stata
+> -   `cleanlog = TRUE`: NO repetir sintaxis en resultados de Stata
 
--   `collectcode = TRUE`: Reutiliza código de Stata de un 'chunk' al siguiente
+> -   `collectcode = TRUE`: Reutiliza código de Stata de un 'chunk' al siguiente
 
 ::: {.notes}
 (Ahora vamos a explicar las opciones para generar el documento)
@@ -881,13 +930,15 @@ que sí interesa.
 
 > - Formato [*grid table*](`r URL_PANDOC_GRID_TABLE`):
 
+::: {.fragment}
 `r exercise_item("Completar tabla de información de variables:")`
 
-> -   Copiar "description" de prototipo
+> -   Copiar "Variable information" de prototipo
 
--   Eliminar comentarios y ejemplos
+> -   Eliminar comentarios y ejemplos
 
--   Eliminar "TODO"'s
+> -   Eliminar "TODO"'s
+:::
 
 ::: {.notes}
 Tabla "rejilla" o "grid table": Se puede "desactivar" el editor visual
@@ -899,7 +950,7 @@ para ver cómo está representada mediante caracteres (en Markdown)
 <br>
 <br>
 
--   Salto de línea: `<br>`
+> -   Salto de línea: `<br>`
 
 <br>
 
@@ -915,7 +966,7 @@ para ver cómo está representada mediante caracteres (en Markdown)
 
 `r exercise_item("Completar:")`
 
-> -  Copiar "description" de prototipo
+> -  Copiar "variable description" y "explanation" de prototipo
 
 > -  Eliminar comentarios
 
@@ -932,15 +983,11 @@ Copiar tal cual del documento prototipo
 <br>
 <br>
 
-- Delimitador: \`\`\`
+> - Tipo de código: `{stata}`
 
 <br>
 
-- Tipo de código: `{stata}`
-
-<br>
-
-- Nombre: `load-data`
+> - Nombre: `load-data`
 
 ::: {.notes}
 -   Entre llaves: Indica "código a ejecutar" en el chunk (stata)
@@ -957,13 +1004,15 @@ porque en el chunk de configuración `echo = FALSE`.
 Comando `use`: `r URL_USE_COMMAND_STATA`
 :::
 
+::: {.fragment}
 `r exercise_item("Archivo de BDD a utilizar")`
 
--   Elegir Cohorte
+> -  Elegir Cohorte
 
--   "Descomentar" (borrar `*` inicial)
+> -  "Descomentar" (borrar `*` inicial)
 
--   Eliminar no utilizados
+> -  Eliminar no utilizados
+:::
 
 ::: {.notes}
 Fijarse en que cuando abrimos un archivo de datos en Stata se ejecuta el
@@ -1007,7 +1056,7 @@ Ruta de archivo:
 
 <br>
 
-- Configuración:
+> - Configuración:
 
     > - Reutiliza `load-data`
     
@@ -1135,7 +1184,6 @@ se vuelva a generar el documento
 
 # Información de contacto
 
-:::{.fragment}
 `r exercise_item("Completar:")`
 
 <br>
@@ -1145,6 +1193,62 @@ se vuelva a generar el documento
 <br>
 
 > - "Original version" (Completar / borrar ?)
+
+# Session info
+
+<br>
+<br>
+
+> - Configuración: `results='markup'`
+
+<br>
+
+> - *Reproducibilidad*
+
+::: {.notes}
+Nos saltamos "References" (luego volvemos sobre ello)
+
+Código R (además de "setup")
+
+Configuración: hace que salga como "texto" con las almohadillas delante.
+
+Es importante incluirlo por "reproducibilidad".
+Si quien intente usar esta sintaxis encuentra diferencias,
+puede comparar el entorno de quien generó la versión original
+(paquetes, versión de R, Sistema Operativo, etc.)
+con el suyo.
+
+NO es suficiente: Versión de Stata por ejemplo no aparece.
+Por eso en ese caso hay que indicarlo (e.g. Stata 15)
+en el título de la sección "Syntax used to create the variable"
+:::
+
+# Output final
+
+<br>
+
+`r exercise_item("Generar documento final:")`
+
+<br>
+
+> - Documento "description"
+
+<br>
+
+> - Dataset
+
+::: {.notes}
+Botón knit ó `CTRL` / `CMD` + `SHIFT` + `K`
+
+Resultado: Se han generado dos "outputs"
+
+-   Documento Word: Chunk "Descriptivos" (running ... do ...)
+se debe al `collectcode=TRUE`,
+que crea un archivo `.do` con el código anterior
+y lo ejecuta antes de este chunk.
+
+-   Dataset (en misma carpeta que el documento
+porque hemos cambiado la ruta de salida).
 :::
 
 `r section_title_slide("Extras")` <!-- TODO: Imagen herramientas? -->
@@ -1153,16 +1257,18 @@ se vuelva a generar el documento
 
 <br>
 
-::: {.leftalign}
+::: {.fragment .leftalign}
 **Opciones:**
+:::
 
 <br>
 
+::: {.leftalign}
 1.  Incluir manualmente
 
 <br>
 
-1.  Usar gestor bibliográfico
+2.  Usar gestor bibliográfico
 :::
 
 ::: {.notes}
@@ -1208,13 +1314,15 @@ Delimitador "refs"
 
 <br>
 
-::: {.fragment}
 `r exercise_item("Definir fuente:")`
 
-> - Tools -\> Project Options... -\> Rmarkdown
+<br>
 
 > - Modificar ruta al archivo de bibliografía
-:::
+
+<br>
+
+> - Tools -\> Project Options... -\> Rmarkdown
 
 # Usar gestor bibliográfico
 
@@ -1229,7 +1337,9 @@ Delimitador "refs"
 
 > - `CTRL` + `SHIFT` + `F8`: Insertar cita <!-- TODO: Botón cita -->
 
-> - Referencias no citadas
+<br>
+
+- Referencias no citadas
 :::
 
 ::: {.notes}
@@ -1259,86 +1369,42 @@ Completar citas:
 -   Susituir las citas manuales, usando botón citar
 [\@], o `CTRL` + `SHIFT` + `F8`
 
+A medida que añadimos citas, se añaden al `.bib` que estamos usando (mostrar)
+
 También, si se quiere incluir una referencia "no citada", se puede en el
 campo 'nocite' del encabezado.
+
+El problema es que no se incluye en el `.bib`
+automáticamente.
+El truco sería "meterla en el texto" y luego
+borrarla.
 :::
 
 # Usar gestor bibliográfico
 
 <br>
 
-::: {.leftalign}
+::: {.leftalign .fragment}
 Crear archivo `.bib`:
 :::
 
 - Desde Zotero
 
-- Desde EndNote `r URL_BIBTEX_EXPORT_ENDNOTE`
+- Desde EndNote: `r URL_BIBTEX_EXPORT_ENDNOTE`
 
-- Desde Mendeley `r URL_BIBTEX_EXPORT_MENDELEY`
+- Desde Mendeley: `r URL_BIBTEX_EXPORT_MENDELEY`
 
 ::: {.notes}
-A medida que añadimos citas, se añaden al `.bib` que estamos usando (mostrar)
+Ventajas del gestor bibliográfico
+
+- No se nos olvidan citas
+
+- Podemos cambiar fácilmente el estilo
 
 Se puede crear el `.bib` manualmente, exportando desde Zotero, y después
 buscar los códigos de registro y copiar y pegar en el documento Rmarkdown.
 
 También se puede exportar en `.bib` desde otros gestores bibliográficos.
-:::
-
-# Session info
-
-<br>
-<br>
-
-- Configuración: `results='markup'`
-
-<br>
-
-- *Reproducibilidad*
-
-::: {.notes}
-Código R (además de "segup")
-
-Configuración: hace que salga como "texto" con las almohadillas delante.
-
-Es importante incluirlo por "reproducibilidad".
-Si quien intente usar esta sintaxis encuentra diferencias,
-puede comparar el entorno de quien generó la versión original
-(paquetes, versión de R, Sistema Operativo, etc.)
-con el suyo.
-
-NO es suficiente: Versión de Stata por ejemplo no aparece.
-Por eso en ese caso hay que indicarlo (e.g. Stata 15)
-en el título de la sección "Syntax used to create the variable"
-:::
-
-# Output final
-
-<br>
-
-`r exercise_item("Generar documento final:")`
-
-<br>
-
-- Documento "description"
-
-<br>
-
-- Dataset
-
-::: {.notes}
-Botón knit ó `CTRL` / `CMD` + `SHIFT` + `K`
-
-Resultado: Se han generado dos "outputs"
-
--   Documento Word: Chunk "Descriptivos" (running ... do ...)
-se debe al `collectcode=TRUE`,
-que crea un archivo `.do` con el código anterior
-y lo ejecuta antes de este chunk.
-
--   Dataset (en misma carpeta que el documento
-porque hemos cambiado la ruta de salida).
 :::
 
 `r section_title_slide("Herramientas")`
@@ -1372,7 +1438,13 @@ En menú "Addins", bajo "ecs.data", ambas herramientas.
 
 - SPSS a Stata: Seleccionar ruta de archivo SPSS (enseñar sin entrar en detalle)
 
-Generar outcomes: Sólo para miembros de "Edad con Salud"
+Queda una cosa:
+El documento y el dataset se crean en la carpeta
+del proyecto, y habría que moverlos "a mano"
+(queremos evitar pasos manuales).
+Vamos a usar una herramienta automática:
+
+Generar outcomes:
 
 Regenerar outcomes / documentos
 

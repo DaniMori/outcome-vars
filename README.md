@@ -142,15 +142,15 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 
 [sync]: (https://dauam-my.sharepoint.com/:b:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Documentacion%20Edad%20con%20Salud/Documentaci%C3%B3n%20transversal/Migracio%CC%81n%20a%20OneDrive/Manual_sincronizacio%CC%81n_OneDrive.pdf)
 
-* Documento "Description": Si eres miembro del equipo de _Edad con Salud_,
-  selecciona un documento en Word "Description" de una variable outcome
-  con el que hayas trabajado recientemente.
+* Documento "prototipo": Si eres miembro del equipo de _Edad con Salud_,
+  selecciona un documento Word "Description" de una variable outcome
+  con la que hayas trabajado recientemente.
   (Es necesario que la sintaxis en este documento,
   utilizada para generar el dataset con la(s) variable(s) outcome
   correspondiente(s), esté creada en Stata.)
   Si no eres miembro del equipo de _Edad con Salud_,
   contacta con [Daniel Morillo](mailto:daniel.morillo@cibersam.es)
-  para solicitar un documento "Description" de ejemplo.
+  para solicitar un documento prototipo de ejemplo.
   Ten este documento a mano cuando se imparta el taller.
 
 ### Checklist
