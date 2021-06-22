@@ -182,14 +182,14 @@ para asistir a este taller y cumplir con los objetivos satisfactoriamente.
 
 ## Notas:
 
-1. Si necesitas ayuda o tienes problemas para instalar R y/o Rstudio,
+1. <span id="f1">Si necesitas ayuda o tienes problemas para instalar R y/o Rstudio,
 puedes consultar
 [este tutorial](http://milton-the-cat.rocks/learnr/r/r_getting_started/#section-installing-r-and-rstudio)
 de Andy Field. (Agradecimientos a Elvira por la aportación.)
-[↩](#a1)
+[↩](#a1)</span>
 
-1. <span id="f2"></span> En caso de no disponer de los permisos necesarios en
+1. <span id="f2">En caso de no disponer de los permisos necesarios en
 alguna de estas carpetas, contactar con
 [Daniel Morillo](mailto:daniel.morillo@cibersam.es) o
 [Elvira Lara](mailto:elvira.lara@uam.es).
-[↩](#a2)
+[↩](#a2)</span>
