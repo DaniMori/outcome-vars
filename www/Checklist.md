@@ -95,24 +95,24 @@
 
 ### Notas:
 
-1. <span id="f1"></span> En caso de no disponer de licencia, por favor contactar con
+1. <span id="f1">En caso de no disponer de licencia, por favor contactar con
 [María Cabello](mailto:maria.cabello@uam.es) (miembros del CCOMS), o
 [el servicio de CAU](mailto:parcsanitari.cau@sjd.es) (miembros del PSSJD).
-[↩](#a1)
+[↩](#a1)</span>
 
-2. <span id="f2"></span> En caso contrario, solicitar el/los permiso(s) necesario(s) a
+2. <span id="f2">En caso contrario, solicitar el/los permiso(s) necesario(s) a
 [Daniel Morillo](mailto:daniel.morillo@cibersam.es) o
 [Elvira Lara](mailto:elvira.lara@uam.es).
-[↩](#a2)
+[↩](#a2)</span>
 
-3. <span id="f3"></span> En caso contrario, solicitar acceso a
+3. <span id="f3">En caso contrario, solicitar acceso a
 [Daniel Morillo](mailto:daniel.morillo@cibersam.es).
-[↩](#a3)
+[↩](#a3)</span>
 
-4. <span id="f4"></span> En caso contrario, seguir las instrucciones del
+4. <span id="f4">En caso contrario, seguir las instrucciones del
 [Manual de sincronización de OneDrive][sync].
-[↩](#a4)
+[↩](#a4)</span>
 
-5. <span id="f5"></span> En caso contrario, solicitar un documento de ejemplo a
+5. <span id="f5">En caso contrario, solicitar un documento de ejemplo a
 [Daniel Morillo](mailto:daniel.morillo@cibersam.es).
-[↩](#a5)
+[↩](#a5)</span>
