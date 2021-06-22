@@ -175,7 +175,7 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 
 ### Checklist
 
-Puedes utilizar la siguiente [lista de comprobación](www/checklist.md)
+Puedes utilizar la siguiente [lista de comprobación](www/Checklist.md)
 para verificar que cumples todos los requisitos necesarios
 para asistir a este taller y cumplir con los objetivos satisfactoriamente.
 
