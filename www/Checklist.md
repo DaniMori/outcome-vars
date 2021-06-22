@@ -57,8 +57,7 @@
   [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder].
   <span id="a2"><sup>[[2]](#f2)</sup></span>
 
-- [ ] **[Para miembros de Edad con Salud]**
-  Tengo permiso de escritura en la carpeta
+- [ ] Tengo permiso de escritura en la carpeta
   [`Documentación` de _Edad con Salud_][doc_folder].
   <sup>[[2]](#f2)</sup>
 

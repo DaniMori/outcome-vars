@@ -98,7 +98,7 @@ Es necesario disponer de cuenta en los siguientes servicios:
 * [Microsoft OneDrive](https://onedrive.live.com): Necesario para poder acceder
   a las carpetas compartidas de proyecto de _Edad con Salud_.
   
-* [Microsoft Teams](https://teams.microsoft.com/): Para acceder al equio y
+* [Microsoft Teams](https://teams.microsoft.com/): Para acceder al equipo y
   al canal del taller.
 
 * **[Opcional]** [Zotero.org](https://www.zotero.org/):
@@ -123,13 +123,11 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
   [`Bases de Datos maestras` de _Edad con Salud_][dbb_folder].
   <span id="a2"><sup>[[2]](#f2)</sup></span>
   
-* Para los miembros del equipo de Edad con Salud, también será necesario
+* Será necesario
   permiso **de escritura** en la carpeta de
   [`Documentación` de _Edad con Salud_][doc_folder].
-  <sup>[[1]](#f1)</sup>
-  Quienes no estén en el equipo de _Edad con Salud_ podrán seguir el taller
-  sin problema, sin necesidad de tener persmisos para esta carpeta.
-  
+  <sup>[[2]](#f2)</sup>
+
 [dbb_folder]: https://dauam-my.sharepoint.com/:f:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Bases%20de%20datos%20maestras%20Edad%20con%20Salud
   
 [doc_folder]: https://dauam-my.sharepoint.com/:f:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Documentacion%20Edad%20con%20Salud
