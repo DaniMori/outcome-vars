@@ -3,6 +3,24 @@
 Workshop sobre automatización de la creación de variables outcome
 para Edad con Salud
 
+## Programa
+
+10:00 - Introducción
+
+10:30 - Configuración del entorno
+
+11:00 - Creación de documentos Rmarkdown
+
+11:20 - Descanso
+
+11:35 - Edición de documentos Rmarkdown
+
+12:15 - Extras: Citas, Herramientas de automatización
+
+12:50 - Conclusión y cierre
+
+13:00 - Fin
+
 
 ## Pre-requisitos
 
