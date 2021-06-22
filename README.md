@@ -1,7 +1,9 @@
 # outcome-vars
 
 Workshop sobre automatización de la creación de variables outcome
-para Edad con Salud
+para Edad con Salud.
+Este taller se realizará el 29 de junio para el equipo de proyecto de
+Edad con Salud, con miembros del CCOMS-UAM y el PSSJD.
 
 ## Programa
 
