@@ -512,11 +512,11 @@ Ver en explorador: "Se abre la carpeta en la que nos encontramos actualmente"
 
 Teclas importantes:
 
-> -   `CTRL` / `CMD`
+> -   `CTRL`
 
 > -   `SHIFT` (Mayús)
 
-> -   `ALT` / `OPTION`
+> -   `ALT`
 
 > -   `ALT GR`
 
@@ -538,7 +538,7 @@ Comprobar que Carnac está activado!
 
 Atajos de teclado:
 
-> -   `ALT` (`CMD`) + `TAB`: Cambiar entre ventanas
+> -   `ALT` + `TAB`: Cambiar entre ventanas
 
 > -   `CTRL` + `1`: Ir al editor
 
@@ -553,7 +553,7 @@ Muy conocido: Usar y mostrar ejemplo de `CTRL` + `C` / `CTRL` + `V`
 
 Ejercicio:
 
--   Probar `ALT` + `TAB` (MAC: `CMD` + `TAB`) para cambiar de Teams a R
+-   Probar `ALT` + `TAB` para cambiar de Teams a R
 (forma rápida y sencilla)
 
 Mostrar posición del cursor al pulsar `CTRL` + `1` y `CTRL` + `2`
@@ -598,7 +598,7 @@ Plantilla `.Rmd`:
 
 `r exercise_item("Guardar:")`
 
--  `CTRL` (`CMD`) + `S`
+-  `CTRL` + `S`
 
 -  Carpeta: `doc/outcomes/cohorte_2019/ola_1/muestra_completa`
 
@@ -610,7 +610,7 @@ Plantilla `.Rmd`:
 <br>
 
 <!-- TODO: Imagen Botón -->
--  Botón knit (`CTRL` / `CMD` + `SHIFT` + `K`)
+-  Botón knit (`CTRL` + `SHIFT` + `K`)
 
 <br>
 
@@ -811,14 +811,13 @@ funciona.
 ::: {.fragment}
 `r exercise_item("Cargar librería *Statamarkdown*:")`
 
--   `ALT` / `OPTION` + `ENTER`
+-   `ALT` + `ENTER`
 :::
 
 ::: {.notes}
 - Configuración necesaria para ejecutar Stata (usar librería Statamarkdown)
 
-Ejecutar para ver resultado: ponerse en la línea y pulsar `ALT` + `ENTER`
-(`OPTION` + `ENTER`).
+Ejecutar para ver resultado: ponerse en la línea y pulsar `ALT` + `ENTER`.
 También se puede escribir en la consola `find_stata()` y `ENTER`.
 
 - Opciones para generar el documento (se ven a continuación)
@@ -1209,7 +1208,7 @@ en el título de la sección "Syntax used to create the variable"
 - Dataset
 
 ::: {.notes}
-Botón knit ó `CTRL` / `CMD` + `SHIFT` + `K`
+Botón knit ó `CTRL` + `SHIFT` + `K`
 
 Resultado: Se han generado dos "outputs"
 
@@ -1487,28 +1486,6 @@ Referencias:
 -   `CTRL` + `ENTER`: Ejecutar comando en R y siguiente
 
 -   `CTRL` + `SHIFT` + `K`: "Knitear" documento
-
--   `CTRL` + `SHIFT` + `F8`: Insertar cita
-
-# Atajos de teclado (Mac)
-
-<br>
-
--   `CMD` + `TAB`: Cambiar entre ventanas de MAC
-
--   `CTRL` + `1`: Ir al editor
-
--   `CTRL` + `2`: Ir a la consola
-
--   `CMD` + `S`: Guardar archivo / guardar cambios
-
--   `CTRL` + `SHIFT` + `F4`: Activar editor visual
-
--   `OPTION` + `ENTER`: Ejecutar comando en R
-
--   `CMD` + `ENTER`: Ejecutar comando en R y siguiente
-
--   `CMD` + `SHIFT` + `K`: "Knitear" documento
 
 -   `CTRL` + `SHIFT` + `F8`: Insertar cita
 
