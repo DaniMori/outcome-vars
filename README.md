@@ -147,7 +147,7 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
 * Sincronización local de la(s) carpeta(s) de _Edad con Salud_:
   En caso de no tener la carpeta o carpetas sincronizadas localmente,
   seguir las instrucciones del
-  [Manual de sincronización de OneDrive][sync].
+  [Manual de sincronización de OneDrive](https://dauam-my.sharepoint.com/:b:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Documentacion%20Edad%20con%20Salud/Documentacion%20transversal/Migracion%20a%20OneDrive/Manual_sincronizacion_OneDrive.pdf).
   
 * **[Opcional]**
   Sincronización local de la [Bibliografía de grupo de Zotero][zotero_bib]:
@@ -157,8 +157,6 @@ Se requiere disponer de permisos y licencias para los siguientes recursos:
   Una vez hecho, si se dispone de acceso a la bibliografía de _Edad con Salud_,
   aparecerá entre las bibliografías de grupo una vez la aplicación haya
   acabado de sincronizar.
-
-[sync]: (https://dauam-my.sharepoint.com/:b:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Documentacion%20Edad%20con%20Salud/Documentaci%C3%B3n%20transversal/Migracio%CC%81n%20a%20OneDrive/Manual_sincronizacio%CC%81n_OneDrive.pdf)
 
 * Documento "prototipo": Si eres miembro del equipo de _Edad con Salud_,
   selecciona un documento Word "Description" de una variable outcome
