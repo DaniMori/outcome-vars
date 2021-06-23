@@ -12,14 +12,13 @@ output:
     highlight:       espresso
     smart:           yes
     center:          no
-    incremental:     yes
+    incremental:     no
     slide_level:     2
     fig_width:       5.5
     fig_height:      2.8
     fig_caption:     no
-    # self_contained:  yes
     self_contained:  no
-    keep_md:         yes
+    keep_md:         no
     reveal_plugins:  "notes"
     reveal_options:
       slideNumber:          yes
@@ -42,43 +41,6 @@ source("R/Output.R", encoding = 'UTF-8')
 
 # Configuration:
 opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, results = 'asis')
-
-
-# Constants:
-
-## TODO: Change repo to public
-URL_CONFIG_FILE <- "https://raw.githubusercontent.com/DaniMori/outcome-vars/main/src/install_ecs_data.R"
-
-URL_VISUAL_MD <- "https://rstudio.github.io/visual-markdown-editing"
-
-URL_PANDOC_GRID_TABLE <- "https://pandoc.org/MANUAL.html#extension-grid_tables"
-
-URL_USE_COMMAND_STATA  <- "https://www.stata.com/manuals/duse.pdf"
-URL_KEEP_COMMAND_STATA <- "https://www.stata.com/manuals13/gsw12.pdf"
-URL_SAVE_COMMAND_STATA <- "https://www.stata.com/manuals/dsave.pdf"
-
-URL_CITATION_SYNTAX <- "https://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html#Citation_Syntax"
-
-URL_BIBTEX_EXPORT_ENDNOTE <- "https://endnote.com/style_download/bibtex-export/"
-URL_BIBTEX_EXPORT_MENDELEY <- "https://www.mendeley.com/guides/mendeley-reference-manager/08.-exporting-references"
-
-LOGO_RMARKDOWN <- "www/assets/rmarkdown_logo.png"
-LOGO_ECS       <- "www/assets/logo_ECS_small.png"
-LOGO_STATA     <- "www/assets/Stata.png"
-
-ICON_CONSTRUCTION <- "www/assets/under_construction.png"
-ICON_THUMB_UP     <- "www/assets/thumbs-up.png"
-ICON_HAND         <- "www/assets/raised_hand.png"
-ICON_PLUS         <- "www/assets/plus.png"
-
-URL_ICON_CONSTRUCTION <- "https://maxcdn.icons8.com/Share/icon/Transport/under_construction1600.png"
-URL_ICON_EXERCISE <- "https://cdn1.iconfinder.com/data/icons/exercise-5/60/bicep__gym__exercise__gymnasium__dumbbell-512.png"
-URL_ICON_EXERCISE_2 <- "http://clipart-library.com/images_k/bicep-silhouette/bicep-silhouette-14.png"
-URL_ICON_EXERCISE_3 <- "https://bodyworkoutgoal.blogspot.com/2019/05/workout-plan-icon.html"
-URL_ICON_EXERCISE_MOM <- "https://img.icons8.com/ios-filled/50/000000/mommy-fitness.png"
-URL_ICON_THUMB_UP <- "https://clipartspub.com/search/emoji-clipart-thumbs-up"
-URL_ICON_HAND     <- "https://www.clipartmax.com/download/m2i8H7i8Z5Z5m2b1_image-raised-hand-emoji-png/"
-URL_ICON_PLUS     <- "http://getdrawings.com/free-icon/icon-plus-sign-66.png"
 ```
 
 ## Automatización de procesos de datos y documentación
@@ -150,14 +112,14 @@ Datos brutos -\> Variables "outcome"
 ::: {.fragment .leftalign}
 Dataset:
 
-> -   Escribir sintaxis
+-   Escribir sintaxis
 :::
 
--   Ejecutar sintaxis
+>-  Ejecutar sintaxis
 
--   Depurar sintaxis
+>-  Depurar sintaxis
 
--   Guardar dataset con outcomes
+>-  Guardar dataset con outcomes
 
 # Procesar datos
 
@@ -165,13 +127,15 @@ Dataset:
 
 Datos brutos -\> Variables "outcome"
 
+::: {.leftalign}
 Documento "Description":
+:::
 
 > -   Copiar sintaxis a documento "Description"
 
--   Escribir documento "Description"
+> -   Escribir documento "Description"
 
--   Guardar documento "Description"
+> -   Guardar documento "Description"
 
 ::: {.notes}
 A veces la sintaxis en el documento se escribe en paralelo a la ejecución
@@ -190,12 +154,12 @@ Integridad de datos:
 
 <br>
 
->-  Actualización
+-  Actualización
 :::
 
 <br>
 
--   Control de conflictos
+> -   Control de conflictos
 
 ::: {.notes}
 -   Actualización: Si cambian los datos de origen
@@ -214,12 +178,12 @@ Documentación:
 
 <br>
 
->-  Control de versiones
+-  Control de versiones
 :::
 
 <br>
 
--   Actualización
+> -   Actualización
 
 ::: {.notes}
 -   Versiones: Que represente el dataset que está generado verdaderamente
@@ -260,19 +224,23 @@ aumenta la probabilidad de cometer errores.
 <br>
 
 ::: {.leftalign}
-1.  Aprender a usar Rmarkdown para automatizar tareas
+> 1.  Aprender a usar Rmarkdown para automatizar tareas
 
 <br>
 
-2.  Aprender a ejecutar sintaxis de Stata en Rmarkdown
+> 2.  Aprender a ejecutar sintaxis de Stata en Rmarkdown
 
 <br>
 
-3.  Entender ventajas de la automatización
+> 3.  Entender ventajas de la automatización
 
 <br>
 
-4.  Adquirir habilidades de manejo de Rstudio
+> 4.  Adquirir habilidades de manejo de Rstudio
+:::
+
+::: {.notes}
+Como objetivo secundario, aprenderemos también a utilizar un poco Rstudio
 :::
 
 # Qué vamos a hacer...
@@ -280,19 +248,19 @@ aumenta la probabilidad de cometer errores.
 <br>
 
 ::: {.leftalign}
-1.  Instalación de entorno
+> 1.  Instalación de entorno
 
 <br>
 
-2.  Creación de documento `.Rmd`
+> 2.  Creación de documento `.Rmd`
 
 <br>
 
-3.  Edición del documento `.Rmd`
+> 3.  Edición del documento `.Rmd`
 
 <br>
 
-4.  Extras: Citas, automatización...
+> 4.  Extras: Citas, automatización...
 :::
 
 # Cómo lo vamos a hacer...
@@ -302,7 +270,7 @@ aumenta la probabilidad de cometer errores.
 ::: {.leftalign}
 Explicación
 
->-  (Teclas en pantalla)
+-  (Teclas en pantalla)
 :::
 
 <br>
@@ -337,11 +305,11 @@ Hay muchos ejercicios aplicados
 Reacciones:
 :::
 
--   😐: Neutral (Reset)
+> -   😐: Neutral (Reset)
 
--   👍: conseguido, todo listo, te sigo, vas muy lento...
+> -   👍: conseguido, todo listo, te sigo, vas muy lento...
 
--   😖: me he perdido, tengo errores, más despacio...
+> -   😖: me he perdido, tengo errores, más despacio...
 
 <br>
 
@@ -378,19 +346,19 @@ Una vez comprobado, pedir a todo el mundo que desactive la mano levantada
 
 <br>
 
-> -   Stata
+-   Stata
 
-> -   R
+-   R
 
-> -   Rstudio
+-   Rstudio
 
-> -   OneDrive (+ carpetas)
+-   OneDrive (+ carpetas)
 
-> -   MS Word
+-   MS Word
 
 <br>
 
--   **(Opcional)**: Zotero
+> -   **(Opcional)**: Zotero
 
 ::: {.notes}
 IMPORTANTE:
@@ -409,19 +377,19 @@ quien tenga Zotero y biblioteca instalados.
 
 Ventanas:
 
--   MS Teams
+> -   MS Teams
 
 <br>
 
--   Rstudio
+> -   Rstudio
 
 <br>
 
--   Stata
+> -   Stata
 
 <br>
 
--   Documento "prototipo"
+> -   Documento "prototipo"
 
 ::: {.notes}
 Ventanas: Cerrar todo lo demás, muy recomendable.
@@ -435,10 +403,11 @@ y las teclas de cursor para ordenar las ventanas en la pantalla.
 # Entorno de Rstudio
 
 <br>
--   Editor
+
+> -   Editor
 
 ::: {.fragment}
->-  Intérprete de R:
+-  Intérprete de R:
 
 <!-- TODO: Imagen consola? -->
 
@@ -503,11 +472,11 @@ Documentación (configurar sólo los de "Edad con Salud")
 
 `r exercise_item("File -> New Project... -> New Directory:")`
 
->-  Gestión de datos de "Edad con Salud"
+-  Gestión de datos de "Edad con Salud"
 
->-  Escribir "Directory name"
+-  Escribir "Directory name"
 
->-  ¿Ejecutar configuración?
+-  ¿Ejecutar configuración?
 
 ::: {.notes}
 Crear en home de usuario (o explicar en "OneDrive")
@@ -530,7 +499,7 @@ Estructura de carpetas:
 ::: {.fragment}
 `r exercise_item('Ver en explorador del SO:')`
 
->- "More" -\> "Show Folder in New Window"
+- "More" -\> "Show Folder in New Window"
 :::
 
 ::: {.notes}
@@ -543,13 +512,13 @@ Ver en explorador: "Se abre la carpeta en la que nos encontramos actualmente"
 
 Teclas importantes:
 
--   `CTRL` / `CMD`
+> -   `CTRL` / `CMD`
 
--   `SHIFT` (Mayús)
+> -   `SHIFT` (Mayús)
 
--   `ALT` / `OPTION`
+> -   `ALT` / `OPTION`
 
--   `ALT GR`
+> -   `ALT GR`
 
 ::: {.notes}
 EXPLICAR: ¿Dónde se encuentra cada una de esas teclas?
@@ -569,11 +538,11 @@ Comprobar que Carnac está activado!
 
 Atajos de teclado:
 
--   `ALT` (`CMD`) + `TAB`: Cambiar entre ventanas
+> -   `ALT` (`CMD`) + `TAB`: Cambiar entre ventanas
 
--   `CTRL` + `1`: Ir al editor
+> -   `CTRL` + `1`: Ir al editor
 
--   `CTRL` + `2`: Ir a la consola
+> -   `CTRL` + `2`: Ir a la consola
 
 `r exercise_item("Probar los atajos de teclado", fragment = TRUE)`
 
@@ -629,11 +598,11 @@ Plantilla `.Rmd`:
 
 `r exercise_item("Guardar:")`
 
->-  `CTRL` (`CMD`) + `S`
+-  `CTRL` (`CMD`) + `S`
 
->-  Carpeta: `doc/outcomes/cohorte_2019/ola_1/muestra_completa`
+-  Carpeta: `doc/outcomes/cohorte_2019/ola_1/muestra_completa`
 
->-  Nombre de archivo
+-  Nombre de archivo
 
 # Generar "output"
 
@@ -641,11 +610,11 @@ Plantilla `.Rmd`:
 <br>
 
 <!-- TODO: Imagen Botón -->
->-  Botón knit (`CTRL` / `CMD` + `SHIFT` + `K`)
+-  Botón knit (`CTRL` / `CMD` + `SHIFT` + `K`)
 
 <br>
 
->-  Output en Word
+-  Output en Word
 
 ::: {.notes}
 Al generar el documento en Word se utilizan los estilos de una plantilla
@@ -656,16 +625,16 @@ de Word
 
 <br>
 
->-  Tipos de código
+-  Tipos de código
 
-    >-  yaml (encabezado)
-    >-  **markdown** / html
-    >-  R
-    >-  **Stata**
+    -  yaml (encabezado)
+    -  **markdown** / html
+    -  R
+    -  **Stata**
 
 <br>
 
->-  "Placeholders" (`<` ... `>`)
+-  "Placeholders" (`<` ... `>`)
 
 ::: {.notes}
 yaml: Encabezado; indica "cómo hay que procesar el archivo"
@@ -684,28 +653,30 @@ Resaltado: No contempla Stata, ya que Rstudio no está diseñado para Stata.
 
 <br>
 
+::: {.fragment}
 -   Stata  (Varios formatos)
 
-    > - `*`
+    - `*`
     
-    > - `/*` ... `*/`
+    - `/*` ... `*/`
     
-    > - `//`
+    - `//`
+:::
 
 <br>
 
->-  yaml / R: `#` (Ignora lo que está a la derecha)
+> -  yaml / R: `#` (Ignora lo que está a la derecha)
 
 <br>
 
->-  Markdown (html): `<!--` ... `-->` ("infijo")
+> -  Markdown (html): `<!--` ... `-->` ("infijo")
 
 # Comentarios
 
 <br>
 <br>
 
->-  "TODO"s == Tareas a realizar
+-  "TODO"s == Tareas a realizar
 
 <br>
 
@@ -743,12 +714,12 @@ include_graphics(ICON_CONSTRUCTION)
 
 <!-- TODO: botón? -->
 
--   Activar (`CTRL` + `SHIFT` + `F4`)
+> -   Activar (`CTRL` + `SHIFT` + `F4`)
 
 
 `r exercise_item("Explorar menús", fragment = TRUE)`
 
--   Más info: `r URL_VISUAL_MD`
+> -   Más info: `r URL_VISUAL_MD`
 
 ::: {.notes}
 Editor visual está en "Experimental" pero es mejor usarlo
@@ -768,13 +739,13 @@ el aspecto del documento "original".
 
 <br>
 
->-  Título
+-  Título
 
->-  Output (plantilla)
+-  Output (plantilla)
 
->-  Bibliografía / estilos bibliográficos
+-  Bibliografía / estilos bibliográficos
 
->-  Referencias "no citadas"
+-  Referencias "no citadas"
 
 <br>
 
@@ -804,24 +775,24 @@ funciona.
 
 <br>
 
-> - Delimitador de código: \`\`\`
+- Delimitador de código: \`\`\`
 
 <br>
 
-> - Tipo de código: `{r ...}`
+- Tipo de código: `{r ...}`
 
 <br>
 
-> - Nombre: `setup`
+- Nombre: `setup`
 
 <br>
 
-> - Configuración de "chunk"
+- Configuración de "chunk"
 
 ::: {.notes}
-Único código en R:
+Único código en R.
 
-- Delmitador de código, tres acentos inversos
+- Delmitador de código, tres acentos inversos. No se muestra en editor visual
 
 - A continuación las llaves (código a ejecutar)
 
@@ -833,14 +804,14 @@ funciona.
 
 <br>
 
-> - Librerías
+- Librerías
 
 <br>
 
 ::: {.fragment}
 `r exercise_item("Cargar librería *Statamarkdown*:")`
 
-> -   `ALT` / `OPTION` + `ENTER`
+-   `ALT` / `OPTION` + `ENTER`
 :::
 
 ::: {.notes}
@@ -864,17 +835,17 @@ Al ejecutar la línea o antes al configurar el paquete
 :::{.fragment}
 `r exercise_item("Encontrar Stata manualmente:")`
 
-> -   Ejecutar Stata
+-   Ejecutar Stata
 
-> -   `sysdir`
+-   `sysdir`
 :::
 
 :::{.fragment .leftalign}
 `r exercise_item("Editar código R:")`
 
-> -   Objeto `STATA_PATH`
+-   Objeto `STATA_PATH`
 
-> -   Configuración del motor de Stata
+-   Configuración del motor de Stata
 :::
 
 :::{.notes}
@@ -899,13 +870,13 @@ Congiuración del motor de Stata (Quitar almohadilla en la línea)
 Configuración de `knitr`:
 :::
 
-> - `echo = FALSE`: NO incluir sintaxis
+- `echo = FALSE`: NO incluir sintaxis
 
-> -   `results = 'hide'`: NO mostrar resultados
+-   `results = 'hide'`: NO mostrar resultados
 
-> -   `cleanlog = TRUE`: NO repetir sintaxis en resultados de Stata
+-   `cleanlog = TRUE`: NO repetir sintaxis en resultados de Stata
 
-> -   `collectcode = TRUE`: Reutiliza código de Stata de un 'chunk' al siguiente
+-   `collectcode = TRUE`: Reutiliza código de Stata de un 'chunk' al siguiente
 
 ::: {.notes}
 (Ahora vamos a explicar las opciones para generar el documento)
@@ -928,16 +899,16 @@ que sí interesa.
 
 <br>
 
-> - Formato [*grid table*](`r URL_PANDOC_GRID_TABLE`):
+- Formato [*grid table*](`r URL_PANDOC_GRID_TABLE`):
 
 ::: {.fragment}
 `r exercise_item("Completar tabla de información de variables:")`
 
-> -   Copiar "Variable information" de prototipo
+-   Copiar "Variable information" de prototipo
 
-> -   Eliminar comentarios y ejemplos
+-   Eliminar comentarios y ejemplos
 
-> -   Eliminar "TODO"'s
+-   Eliminar "TODO"'s
 :::
 
 ::: {.notes}
@@ -950,15 +921,15 @@ para ver cómo está representada mediante caracteres (en Markdown)
 <br>
 <br>
 
-> -   Salto de línea: `<br>`
+-   Salto de línea: `<br>`
 
 <br>
 
--   Variable description
+> -   Variable description
 
 <br>
 
--   Explanation of how the variables were created
+> -   Explanation of how the variables were created
 
 # Texto (Markdown)
 
@@ -966,11 +937,11 @@ para ver cómo está representada mediante caracteres (en Markdown)
 
 `r exercise_item("Completar:")`
 
-> -  Copiar "variable description" y "explanation" de prototipo
+-  Copiar "variable description" y "explanation" de prototipo
 
-> -  Eliminar comentarios
+-  Eliminar comentarios
 
-> -  Eliminar "TODO"'s
+-  Eliminar "TODO"'s
 
 ::: {.notes}
 Copiar tal cual del documento prototipo
@@ -983,11 +954,11 @@ Copiar tal cual del documento prototipo
 <br>
 <br>
 
-> - Tipo de código: `{stata}`
+- Tipo de código: `{stata}`
 
 <br>
 
-> - Nombre: `load-data`
+- Nombre: `load-data`
 
 ::: {.notes}
 -   Entre llaves: Indica "código a ejecutar" en el chunk (stata)
@@ -1007,11 +978,11 @@ Comando `use`: `r URL_USE_COMMAND_STATA`
 ::: {.fragment}
 `r exercise_item("Archivo de BDD a utilizar")`
 
-> -  Elegir Cohorte
+-  Elegir Cohorte
 
-> -  "Descomentar" (borrar `*` inicial)
+-  "Descomentar" (borrar `*` inicial)
 
-> -  Eliminar no utilizados
+-  Eliminar no utilizados
 :::
 
 ::: {.notes}
@@ -1056,18 +1027,18 @@ Ruta de archivo:
 
 <br>
 
-> - Configuración:
+- Configuración:
 
-    > - Reutiliza `load-data`
+    - Reutiliza `load-data`
     
-    > - `echo=TRUE`
+    - `echo=TRUE`
 
 :::{.fragment}
 `r exercise_item("Escribir sintaxis:")`
 
-> -   Copiar sintaxis de prototipo
+-   Copiar sintaxis de prototipo
 
-> -   Eliminar "TODO"'s
+-   Eliminar "TODO"'s
 :::
 
 ::: {.notes}
@@ -1101,18 +1072,18 @@ la sintaxis en el documento de descripción.
 
 <br>
 
-> - Configuración
+- Configuración
 
 :::{.fragment}
 `r exercise_item("Completar sintaxis:")`
 
-> -   Copiar de prototipo o escribir:
+-   Copiar de prototipo o escribir:
 
-  > - `sum`: vv. cuantitativas
+    - `sum`: vv. cuantitativas
   
-  > - `codebook` (opcional) & `tab`: vv. categóricas
+    - `codebook` (opcional) & `tab`: vv. categóricas
 
-> -   Eliminar "TODO"
+-   Eliminar "TODO"
 :::
 
 ::: {.notes}
@@ -1152,7 +1123,7 @@ Comando `keep`: `r URL_KEEP_COMMAND_STATA`
 <br>
 
 ::: {.leftalign}
--   Commando `save`: `r URL_SAVE_COMMAND_STATA`
+Commando `save`: `r URL_SAVE_COMMAND_STATA`
 :::
 
 <br>
@@ -1160,11 +1131,11 @@ Comando `keep`: `r URL_KEEP_COMMAND_STATA`
 :::{.fragment}
 `r exercise_item("Rellenar:")`
 
-> - Seleccionar cohorte / Ola
+- Seleccionar cohorte / Ola
 
-> - Sustituir "variable" y "qualifier"
+- Sustituir "variable" y "qualifier"
 
-> - Borrar sintaxis no utilizada
+- Borrar sintaxis no utilizada
 :::
 
 ::: {.notes}
@@ -1188,22 +1159,22 @@ se vuelva a generar el documento
 
 <br>
 
-> - Sustituir "placeholders"
+- Sustituir "placeholders"
 
 <br>
 
-> - "Original version" (Completar / borrar ?)
+- "Original version" (Completar / borrar ?)
 
 # Session info
 
 <br>
 <br>
 
-> - Configuración: `results='markup'`
+- Configuración: `results='markup'`
 
 <br>
 
-> - *Reproducibilidad*
+- *Reproducibilidad*
 
 ::: {.notes}
 Nos saltamos "References" (luego volvemos sobre ello)
@@ -1231,11 +1202,11 @@ en el título de la sección "Syntax used to create the variable"
 
 <br>
 
-> - Documento "description"
+- Documento "description"
 
 <br>
 
-> - Dataset
+- Dataset
 
 ::: {.notes}
 Botón knit ó `CTRL` / `CMD` + `SHIFT` + `K`
@@ -1257,18 +1228,18 @@ porque hemos cambiado la ruta de salida).
 
 <br>
 
-::: {.fragment .leftalign}
+::: {.leftalign}
 **Opciones:**
 :::
 
 <br>
 
 ::: {.leftalign}
-1.  Incluir manualmente
+> 1.  Incluir manualmente
 
 <br>
 
-2.  Usar gestor bibliográfico
+> 2.  Usar gestor bibliográfico
 :::
 
 ::: {.notes}
@@ -1285,11 +1256,11 @@ Preguntar quién tiene instalado Zotero y la bibliografía de Edad con Salud
 
 <br>
 
-> - Borrar párrafo y "TODO"
+- Borrar párrafo y "TODO"
 
 <br>
 
-> - Borrar delimitador de sección
+- Borrar delimitador de sección
 :::
 
 ::: {.notes}
@@ -1318,11 +1289,11 @@ Delimitador "refs"
 
 <br>
 
-> - Modificar ruta al archivo de bibliografía
+- Modificar ruta al archivo de bibliografía
 
 <br>
 
-> - Tools -\> Project Options... -\> Rmarkdown
+- Tools -\> Project Options... -\> Rmarkdown
 
 # Usar gestor bibliográfico
 
@@ -1335,11 +1306,11 @@ Delimitador "refs"
 ::: {.fragment}
 `r exercise_item("Completar citas")`
 
-> - `CTRL` + `SHIFT` + `F8`: Insertar cita <!-- TODO: Botón cita -->
+- `CTRL` + `SHIFT` + `F8`: Insertar cita <!-- TODO: Botón cita -->
 
 <br>
 
-- Referencias no citadas
+> - Referencias no citadas
 :::
 
 ::: {.notes}
@@ -1388,11 +1359,11 @@ borrarla.
 Crear archivo `.bib`:
 :::
 
-- Desde Zotero
+> - Desde Zotero
 
-- Desde EndNote: `r URL_BIBTEX_EXPORT_ENDNOTE`
+> - Desde EndNote: `r URL_BIBTEX_EXPORT_ENDNOTE`
 
-- Desde Mendeley: `r URL_BIBTEX_EXPORT_MENDELEY`
+> - Desde Mendeley: `r URL_BIBTEX_EXPORT_MENDELEY`
 
 ::: {.notes}
 Ventajas del gestor bibliográfico
@@ -1419,18 +1390,18 @@ include_graphics(ICON_CONSTRUCTION)
 
 <br>
 
--   SPSS a Stata
+> -   SPSS a Stata
 
 <br>
 
--   Generar outcomes:
+> -   Generar outcomes:
 
 ::: {.fragment}
 `r exercise_item("Regenerar outcomes / documentos")`
 
-> - Cambiar ruta del dataset
+- Cambiar ruta del dataset
 
-> - Seleccionar archivo(s) y "modo"
+- Seleccionar archivo(s) y "modo"
 :::
 
 ::: {.notes}
@@ -1475,29 +1446,25 @@ Regenerar outcomes / documentos
 
 Markdown:
 
-> -   [Editor visual de Rstudio](`r URL_VISUAL_MD`)
+-   [Editor visual de Rstudio](`r URL_VISUAL_MD`)
 
-> -   [Sintaxis grid tables](`r `URL_PANDOC_GRID_TABLE`)
-
-<br>
+-   [Sintaxis grid tables](`r `URL_PANDOC_GRID_TABLE`)
 
 Comandos de Stata:
 
-> -   [`use`](`r URL_USE_COMMAND_STATA`)
+-   [`use`](`r URL_USE_COMMAND_STATA`)
 
-> -   [`keep`](`r URL_KEEP_COMMAND_STATA`)
+-   [`keep`](`r URL_KEEP_COMMAND_STATA`)
 
-> -   [`save`](`r URL_SAVE_COMMAND_STATA`)
-
-<br>
+-   [`save`](`r URL_SAVE_COMMAND_STATA`)
 
 Referencias:
 
-> -   [Sintaxis de citas en Markdown](`r URL_CITATION_SYNTAX`)
+-   [Sintaxis de citas en Markdown](`r URL_CITATION_SYNTAX`)
 
-> -   [Exportar `.bib` desde EndNote](`r URL_BIBTEX_EXPORT_ENDNOTE`)
+-   [Exportar `.bib` desde EndNote](`r URL_BIBTEX_EXPORT_ENDNOTE`)
 
-> -   [Exportar `.bib` desde Mendeley](`r URL_BIBTEX_EXPORT_MENDELEY`)
+-   [Exportar `.bib` desde Mendeley](`r URL_BIBTEX_EXPORT_MENDELEY`)
 
 </small>
 
@@ -1505,60 +1472,107 @@ Referencias:
 
 <br>
 
-> -   `ALT` + `TAB`: Cambiar entre ventanas de Windows
+-   `ALT` + `TAB`: Cambiar entre ventanas de Windows
 
-> -   `CTRL` + `1`: Ir al editor
+-   `CTRL` + `1`: Ir al editor
 
-> -   `CTRL` + `2`: Ir a la consola
+-   `CTRL` + `2`: Ir a la consola
 
-> -   `CTRL` + `S`: Guardar archivo / guardar cambios
+-   `CTRL` + `S`: Guardar archivo / guardar cambios
 
-> -   `CTRL` + `SHIFT` + `F4`: Activar editor visual
+-   `CTRL` + `SHIFT` + `F4`: Activar editor visual
 
-> -   `ALT` + `ENTER`: Ejecutar comando en R
+-   `ALT` + `ENTER`: Ejecutar comando en R
 
-> -   `CTRL` + `ENTER`: Ejecutar comando en R y siguiente
+-   `CTRL` + `ENTER`: Ejecutar comando en R y siguiente
 
-> -   `CTRL` + `SHIFT` + `K`: "Knitear" documento
+-   `CTRL` + `SHIFT` + `K`: "Knitear" documento
 
-> -   `CTRL` + `SHIFT` + `F8`: Insertar cita
+-   `CTRL` + `SHIFT` + `F8`: Insertar cita
 
 # Atajos de teclado (Mac)
 
 <br>
 
-> -   `CMD` + `TAB`: Cambiar entre ventanas de Windows
+-   `CMD` + `TAB`: Cambiar entre ventanas de MAC
 
-> -   `CTRL` + `1`: Ir al editor
+-   `CTRL` + `1`: Ir al editor
 
-> -   `CTRL` + `2`: Ir a la consola
+-   `CTRL` + `2`: Ir a la consola
 
-> -   `CMD` + `S`: Guardar archivo / guardar cambios
+-   `CMD` + `S`: Guardar archivo / guardar cambios
 
-> -   `CTRL` + `SHIFT` + `F4`: Activar editor visual
+-   `CTRL` + `SHIFT` + `F4`: Activar editor visual
 
-> -   `OPTION` + `ENTER`: Ejecutar comando en R
+-   `OPTION` + `ENTER`: Ejecutar comando en R
 
-> -   `CMD` + `ENTER`: Ejecutar comando en R y siguiente
+-   `CMD` + `ENTER`: Ejecutar comando en R y siguiente
 
-> -   `CMD` + `SHIFT` + `K`: "Knitear" documento
+-   `CMD` + `SHIFT` + `K`: "Knitear" documento
 
-> -   `CTRL` + `SHIFT` + `F8`: Insertar cita
+-   `CTRL` + `SHIFT` + `F8`: Insertar cita
 
 # Rutas de archivo
 
 <br>
 
-> -   Absoluta = "path" completo
+-   Absoluta = "path" completo
 
 <br>
 
-> -   Relativa = "path" relativo a la ruta actual
+-   Relativa = "path" relativo a la ruta actual
 
 <br>
 
-> -   Home de usuario: `~`
+-   Home de usuario: `~`
 
 <br>
 
-> -   Subir un nivel: `../`
+-   Subir un nivel: `../`
+
+# Atribuciones
+
+::: {.container}
+::: {.col style="width:20%"}
+`r img(alt = "Logo Rmarkdown", src = LOGO_RMARKDOWN, height = IMG_HEIGHT_ATTR)`
+:::
+::: {.col style="width:80%"}
+[Rstudio.com](`r URL_LOGO_RMD`)
+:::
+:::
+
+::: {.container}
+::: {.col style="width:20%"}
+`r img(alt = "Logo Stata", src = LOGO_STATA, height = IMG_HEIGHT_ATTR)`
+:::
+::: {.col style="width:80%"}
+[Stata.com](`r URL_LOGO_STATA`)
+:::
+:::
+
+::: {.container}
+::: {.col style="width:20%"}
+`r img(alt = "Plus sign image", src = ICON_PLUS, height = IMG_HEIGHT_ATTR)`
+:::
+::: {.col style="width:80%"}
+[GetDrawings.com](`r URL_ICON_PLUS`)
+:::
+:::
+
+::: {.container}
+::: {.col style="width:20%"}
+`r img(alt = "'Under construction' icon", src = ICON_CONSTRUCTION, height = IMG_HEIGHT_ATTR)`
+:::
+::: {.col style="width:80%"}
+[Icons8.com](`r URL_ICON_CONSTRUCTION`)
+:::
+:::
+
+::: {.container}
+::: {.col style="width:20%"}
+`r img(alt = "'Exercise' icon", src = ICON_EXERCISE, height = IMG_HEIGHT_ATTR)`
+:::
+::: {.col style="width:80%"}
+[Icons8.com](`r URL_ICON_EXERCISE`)
+:::
+:::

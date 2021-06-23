@@ -19,15 +19,70 @@ library(pacman)
 
 p_load(assertive, glue, htmltools)
 
-# source("R/{source_file}", encoding = 'UTF-8')
-
 
 ## ---- CONSTANTS: -------------------------------------------------------------
 
+# Local files:
+LOGO_ECS          <- "www/assets/logo_ECS_small.png"
+LOGO_RMARKDOWN    <- "www/assets/rmarkdown_logo.png"
+LOGO_STATA        <- "www/assets/Stata.png"
+ICON_PLUS         <- "www/assets/plus.png"
+ICON_CONSTRUCTION <- "www/assets/under_construction.png"
 ICON_EXERCISE     <- "www/assets/exercise_mom.png"
 
-NEW_LINE <- '\n'
+# Remote files:
 
+## Configuration file:
+URL_CONFIG_FILE <- paste(
+  "https://raw.githubusercontent.com",
+  "DaniMori/outcome-vars/main/src/install_ecs_data.R",
+  sep = "/"
+)
+
+## Syntax references for Markdown:
+URL_VISUAL_MD <- "https://rstudio.github.io/visual-markdown-editing"
+URL_PANDOC_GRID_TABLE <- "https://pandoc.org/MANUAL.html#extension-grid_tables"
+URL_CITATION_SYNTAX <- paste(
+  "https://rmarkdown.rstudio.com",
+  "authoring_bibliographies_and_citations.html#Citation_Syntax",
+  sep = "/"
+)
+
+## Syntax references for Stata:
+URL_USE_COMMAND_STATA  <- "https://www.stata.com/manuals/duse.pdf"
+URL_KEEP_COMMAND_STATA <- "https://www.stata.com/manuals13/gsw12.pdf"
+URL_SAVE_COMMAND_STATA <- "https://www.stata.com/manuals/dsave.pdf"
+
+## BibTeX exporting resources:
+URL_BIBTEX_EXPORT_ENDNOTE  <-
+  "https://endnote.com/style_download/bibtex-export/"
+URL_BIBTEX_EXPORT_MENDELEY <- paste(
+  "https://www.mendeley.com",
+  "guides/mendeley-reference-manager/08.-exporting-references",
+  sep = "/"
+)
+
+## URLs for image attributions:
+URL_LOGO_RMD          <- "https://rstudio.com/"
+URL_LOGO_STATA        <- "https://www.stata.com/"
+URL_ICON_PLUS         <- "http://getdrawings.com/free-icon/icon-plus-sign-66.png"
+URL_ICON_CONSTRUCTION <- paste(
+  "https://maxcdn.icons8.com",
+  "Share/icon/Transport/under_construction1600.png",
+  sep = "/"
+)
+URL_ICON_EXERCISE     <-
+  "https://icons8.com/icons/set/mommy-fitness"
+# URL_ICON_EXERCISE     <- "https://cdn1.iconfinder.com/data/icons/exercise-5/60/bicep__gym__exercise__gymnasium__dumbbell-512.png"
+# URL_ICON_EXERCISE_2   <- "http://clipart-library.com/images_k/bicep-silhouette/bicep-silhouette-14.png"
+# URL_ICON_EXERCISE_3   <- "https://bodyworkoutgoal.blogspot.com/2019/05/workout-plan-icon.html"
+
+
+# Graphical properties:
+IMG_HEIGHT_ATTR <- "43"
+
+# Text formatting:
+NEW_LINE <- '\n'
 
 ## ---- FUNCTIONS: -------------------------------------------------------------
 
