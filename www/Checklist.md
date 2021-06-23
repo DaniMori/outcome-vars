@@ -89,8 +89,6 @@
   _Edad con Salud_, con sintaxis de Stata.
   <span id="a5"><sup>[[5]](#f5)</sup></span>
 
-[sync]: (https://dauam-my.sharepoint.com/:b:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Documentacion%20Edad%20con%20Salud/Documentaci%C3%B3n%20transversal/Migracio%CC%81n%20a%20OneDrive/Manual_sincronizacio%CC%81n_OneDrive.pdf)
-
 
 ### Notas:
 
@@ -111,6 +109,8 @@
 4. <span id="f4">En caso contrario, seguir las instrucciones del
 [Manual de sincronización de OneDrive][sync].
 [↩](#a4)</span>
+
+[sync]: (https://dauam-my.sharepoint.com/:b:/r/personal/marta_miret_uam_es/Documents/Edad%20con%20Salud/Documentacion%20Edad%20con%20Salud/Documentaci%C3%B3n%20transversal/Migracio%CC%81n%20a%20OneDrive/Manual_sincronizacio%CC%81n_OneDrive.pdf)
 
 5. <span id="f5">En caso contrario, solicitar un documento de ejemplo a
 [Daniel Morillo](mailto:daniel.morillo@cibersam.es).
