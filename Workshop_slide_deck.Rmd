@@ -234,13 +234,11 @@ aumenta la probabilidad de cometer errores.
 
 > 3.  Entender ventajas de la automatización
 
-<br>
-
-> 4.  Adquirir habilidades de manejo de Rstudio
 :::
 
 ::: {.notes}
-Como objetivo secundario, aprenderemos también a utilizar un poco Rstudio
+
+(Quitado); Objetivo secundario, aprenderemos también a utilizar un poco Rstudio
 :::
 
 # Qué vamos a hacer...
@@ -267,32 +265,18 @@ Como objetivo secundario, aprenderemos también a utilizar un poco Rstudio
 
 <br>
 
-::: {.leftalign}
-Explicación
-
--  (Teclas en pantalla)
-:::
+> - Explicaciones
 
 <br>
 
+::: {.fragment}
+- Ejercicios
+
 `r exercise_item("Ejercicio:", fragment = TRUE)`
+:::
 
 ::: {.notes}
-Explicaciones (pocas) con teclas en pantalla
-
-Teclado en pantalla: Comprobar que Carnac esté iniciado
-
-- Es habitual usar el teclado para hacer tareas más sencillas
-
-- Voy a explicar cómo usar tanto el interfaz gráfico como el teclado
-(a veces puede que se me olvide y vaya "demasiado rápido",
-por eso muestro las teclas)
-
-- Explicar que se mostrarán algunas combinaciones de teclas (atajos)
-
-- Comprobar que se ven (p. ej. `CTRL` + `C`)
-
-- Avisar que puede fallar y dejarse de ver las teclas
+Explicaciones (pocas)
 
 Hay muchos ejercicios aplicados
 :::
@@ -506,7 +490,7 @@ Estructura de carpetas:
 Ver en explorador: "Se abre la carpeta en la que nos encontramos actualmente"
 :::
 
-# Usar Rstudio
+# Atajos de teclado
 
 <br>
 
@@ -521,15 +505,19 @@ Teclas importantes:
 > -   `ALT GR`
 
 ::: {.notes}
-EXPLICAR: ¿Dónde se encuentra cada una de esas teclas?
+ATENCIÓN: Comprobar que Carnac esté activado!
+
+- Es habitual usar el teclado para hacer tareas más sencillas
+
+- Voy a explicar cómo el interfaz gráfico y también cómo usar el teclado,
+aunque YO NO LO VOY A USAR.
+
+- se mostrarán algunas combinaciones de teclas (atajos)
+
+EXPLICAR: ¿Dónde se encuentra cada una de las teclas?
 
 Énfasis en distinguir `ALT GR` (derecha de barra espciadora)
 y `ALT` (izquierda)
-
-Comentar que `ALT GR` se muestra como `CTRL` + `ALT`
-(de hecho puede usarse `CTRL` + `ALT` para escribir ese mismo resultado)
-
-Comprobar que Carnac está activado!
 :::
 
 # Usar Rstudio
@@ -554,7 +542,7 @@ Muy conocido: Usar y mostrar ejemplo de `CTRL` + `C` / `CTRL` + `V`
 Ejercicio:
 
 -   Probar `ALT` + `TAB` para cambiar de Teams a R
-(forma rápida y sencilla)
+(forma rápida y sencilla, NO es un atajo de Rstudio sino de Windows)
 
 Mostrar posición del cursor al pulsar `CTRL` + `1` y `CTRL` + `2`
 
@@ -1497,7 +1485,7 @@ Referencias:
 
 <br>
 
--   Relativa = "path" relativo a la ruta actual
+-   Relativa = "path" relativo a un archivo
 
 <br>
 
