@@ -80,6 +80,7 @@ IMG_HEIGHT_ATTR <- "40"
 
 # Text formatting:
 NEW_LINE <- '\n'
+BF_DELIM <- '**'
 
 ## ---- FUNCTIONS: -------------------------------------------------------------
 
@@ -123,7 +124,7 @@ exercise_item <- function(prompt, fragment = FALSE) {
   paste(
     div_init,
     IMG_OUT,
-    prompt,
+    paste0(BF_DELIM, prompt, BF_DELIM),
     ":::",
     sep = NEW_LINE
   )
