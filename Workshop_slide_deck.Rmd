@@ -1429,6 +1429,69 @@ Regenerar outcomes / documentos
    -   Repetir: Modificar archivo ligeramente y probar opciones de "fecha"
 :::
 
+`r section_title_slide("Conclusiones")`
+
+# Resumen
+
+<br>
+
+::: {.leftalign}
+> 1. Crear documentación en Rmarkdown (con Stata)
+
+<br>
+
+> 2. Generar dataset y documentación **en un sólo paso**
+
+<br>
+
+> 3. Repetir eliminando trabajo manual
+:::
+
+::: {.notes}
+- Este paso requiere todo el esfuerzo por nuestra parte
+
+- El propio documento se "ejecuta" generando dataset y documentación
+
+- Repetir sólo implica un paso con trabajo manual mínimo (pero no cambiar nada
+de lo ya hecho y escrito)
+:::
+
+# Conclusiones
+
+<br>
+
+> - Dataset y documentación **en el mismo paso**
+
+<br>
+
+> - Evitar duplicar trabajo repetitivo
+
+<br>
+
+> - Reducir tareas manuales
+
+::: {.notes}
+- Evitar conflictos de versiones entre ambos
+
+- Evitar tiempo, esfuerzo y frustración
+
+- Reducir posibilidad de errores
+:::
+
+# A continuación...
+
+<br>
+
+- ¿Mejoras en las plantillas?
+
+- ¿Oportunidades de práctica y aprendizaje?
+
+- ¿Mejoras en las herramientas de automatización?
+
+- ¿Nuevas funcionalidades?
+
+- ¿Reestructuración de la estructura de archivos?
+
 `r section_title_slide("FIN")`
 
 <br>
