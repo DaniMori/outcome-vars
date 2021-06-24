@@ -79,7 +79,7 @@ URL_ICON_EXERCISE     <-
 
 
 # Graphical properties:
-IMG_HEIGHT_ATTR <- "43"
+IMG_HEIGHT_ATTR <- "40"
 
 # Text formatting:
 NEW_LINE <- '\n'

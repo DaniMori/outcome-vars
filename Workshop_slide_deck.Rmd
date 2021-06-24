@@ -1574,7 +1574,7 @@ Referencias:
 
 ::: {.container}
 ::: {.col style="width:20%"}
-`r img(alt = "Logo Rmarkdown", src = LOGO_RMARKDOWN, height = IMG_HEIGHT_ATTR)`
+`r img(alt = "Logo Rmarkdown", src = LOGO_RMARKDOWN, height = 70)`
 :::
 ::: {.col style="width:80%"}
 [Rstudio.com](`r URL_LOGO_RMD`)
@@ -1583,7 +1583,7 @@ Referencias:
 
 ::: {.container}
 ::: {.col style="width:20%"}
-`r img(alt = "Logo Stata", src = LOGO_STATA, height = IMG_HEIGHT_ATTR)`
+`r img(alt = "Logo Stata", src = LOGO_STATA, height = 32)`
 :::
 ::: {.col style="width:80%"}
 [Stata.com](`r URL_LOGO_STATA`)
@@ -1601,7 +1601,7 @@ Referencias:
 
 ::: {.container}
 ::: {.col style="width:20%"}
-`r img(alt = "'Under construction' icon", src = ICON_CONSTRUCTION, height = IMG_HEIGHT_ATTR)`
+`r img(alt = "'Under construction' icon", src = ICON_CONSTRUCTION, height = 75)`
 :::
 ::: {.col style="width:80%"}
 [Icons8.com](`r URL_ICON_CONSTRUCTION`)
