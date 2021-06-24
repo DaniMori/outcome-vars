@@ -28,7 +28,7 @@ LOGO_RMARKDOWN    <- "www/assets/rmarkdown_logo.png"
 LOGO_STATA        <- "www/assets/Stata.png"
 ICON_PLUS         <- "www/assets/plus.png"
 ICON_CONSTRUCTION <- "www/assets/under_construction.png"
-ICON_EXERCISE     <- "www/assets/exercise_mom.png"
+ICON_EXERCISE     <- "www/assets/exercise3.png"
 
 # Remote files:
 
@@ -72,10 +72,7 @@ URL_ICON_CONSTRUCTION <- paste(
   sep = "/"
 )
 URL_ICON_EXERCISE     <-
-  "https://icons8.com/icons/set/mommy-fitness"
-# URL_ICON_EXERCISE     <- "https://cdn1.iconfinder.com/data/icons/exercise-5/60/bicep__gym__exercise__gymnasium__dumbbell-512.png"
-# URL_ICON_EXERCISE_2   <- "http://clipart-library.com/images_k/bicep-silhouette/bicep-silhouette-14.png"
-# URL_ICON_EXERCISE_3   <- "https://bodyworkoutgoal.blogspot.com/2019/05/workout-plan-icon.html"
+  "https://bodyworkoutgoal.blogspot.com/2019/05/workout-plan-icon.html"
 
 
 # Graphical properties:
