@@ -109,6 +109,8 @@ include_graphics(LOGO_RMARKDOWN)
 
 Datos brutos -\> Variables "outcome"
 
+<br>
+
 ::: {.fragment .leftalign}
 Dataset:
 
@@ -126,6 +128,8 @@ Dataset:
 <br>
 
 Datos brutos -\> Variables "outcome"
+
+<br>
 
 ::: {.leftalign}
 Documento "Description":

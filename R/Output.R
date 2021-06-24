@@ -105,7 +105,7 @@ exercise_item <- function(prompt, fragment = FALSE) {
   IMG_OUT <- img(
     alt   = "Icono 'ejercicio'",
     src   = ICON_EXERCISE,
-    style = "width:10%;"
+    style = "width:10%;margin-left:-100px;vertical-align:text-top;"
   )
 
   ## Argument checking and formatting: ----
@@ -119,7 +119,7 @@ exercise_item <- function(prompt, fragment = FALSE) {
   
   if (fragment) div_init <- paste(div_init, ".fragment")
   
-  div_init <- paste0(div_init, "}")
+  div_init <- paste0(div_init, '}')
   
   paste(
     div_init,
