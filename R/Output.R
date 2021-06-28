@@ -28,7 +28,7 @@ LOGO_RMARKDOWN    <- "www/assets/rmarkdown_logo.png"
 LOGO_STATA        <- "www/assets/Stata.png"
 ICON_PLUS         <- "www/assets/plus.png"
 ICON_CONSTRUCTION <- "www/assets/under_construction.png"
-ICON_EXERCISE     <- "www/assets/exercise_mom.png"
+ICON_EXERCISE     <- "www/assets/exercise3.png"
 
 # Remote files:
 
@@ -72,17 +72,15 @@ URL_ICON_CONSTRUCTION <- paste(
   sep = "/"
 )
 URL_ICON_EXERCISE     <-
-  "https://icons8.com/icons/set/mommy-fitness"
-# URL_ICON_EXERCISE     <- "https://cdn1.iconfinder.com/data/icons/exercise-5/60/bicep__gym__exercise__gymnasium__dumbbell-512.png"
-# URL_ICON_EXERCISE_2   <- "http://clipart-library.com/images_k/bicep-silhouette/bicep-silhouette-14.png"
-# URL_ICON_EXERCISE_3   <- "https://bodyworkoutgoal.blogspot.com/2019/05/workout-plan-icon.html"
+  "https://bodyworkoutgoal.blogspot.com/2019/05/workout-plan-icon.html"
 
 
 # Graphical properties:
-IMG_HEIGHT_ATTR <- "43"
+IMG_HEIGHT_ATTR <- "40"
 
 # Text formatting:
 NEW_LINE <- '\n'
+BF_DELIM <- '**'
 
 ## ---- FUNCTIONS: -------------------------------------------------------------
 
@@ -107,7 +105,7 @@ exercise_item <- function(prompt, fragment = FALSE) {
   IMG_OUT <- img(
     alt   = "Icono 'ejercicio'",
     src   = ICON_EXERCISE,
-    style = "width:10%;"
+    style = "width:10%;margin-left:-100px;vertical-align:text-top;"
   )
 
   ## Argument checking and formatting: ----
@@ -121,12 +119,12 @@ exercise_item <- function(prompt, fragment = FALSE) {
   
   if (fragment) div_init <- paste(div_init, ".fragment")
   
-  div_init <- paste0(div_init, "}")
+  div_init <- paste0(div_init, '}')
   
   paste(
     div_init,
     IMG_OUT,
-    prompt,
+    paste0(BF_DELIM, prompt, BF_DELIM),
     ":::",
     sep = NEW_LINE
   )
