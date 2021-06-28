@@ -1,6 +1,8 @@
 # Preparación del taller
 
 
+1. Establecer pantalla derecha como principal e izquierda como secundaria
+
 1. Abrir Rstudio
 
 1. Resetear Rstudio a configuración de fábrica y cerrar
@@ -29,5 +31,7 @@
 1. Pulsar `S` para abir "speaker mode"
 
 1. Pulsar `F11` para inciar pantalla completa
+
+1. Apartar teclado!
 
 1. Colocar ventana de "speaker notes" en pantalla principal
