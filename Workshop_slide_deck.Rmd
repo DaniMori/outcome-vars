@@ -1488,9 +1488,13 @@ de lo ya hecho y escrito)
 
 <br>
 
+*¡Gracias por vuestra atención!*
+
 <br>
 
-*¡Gracias por vuestra atención!*
+(y por rellenar la encuesta...)
+
+https://forms.gle/YArEEZ8wHDqVy9sy8
 
 `r section_title_slide("Chuletas")`
 
