@@ -26,6 +26,7 @@ vignettes/*.pdf
 *.knit.md
 # R Environment Variables
 .Renviron
-
 # Intermediate markdown version
 Workshop_slide_deck.md
+*.html
+Workshop_slide_deck_files
